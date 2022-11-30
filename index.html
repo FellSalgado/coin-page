@@ -10,21 +10,23 @@
 <body>
     <!-- main -->
     <main class="container">
-        <form>
+        <div class="form">
             <h2>TABLAS DE MULTIPLICAR</h2>
             <div class="inputs-flex">
-                <input type="text" class="form-control" id="" placeholder="Ingresar tabla" required>
-                <input type="text" class="form-control" id="" placeholder="Ingresar fila" required>
+                <input type="text" class="form-control" id="table" placeholder="Ingresar tabla" required>
+                <input type="text" class="form-control" id="row" placeholder="Ingresar fila" required>
             </div>
             <button onclick="mostrar()">CALCULAR</button>
-        </form>
+        </div>
 
         <!-- resultado -->
-        <div class="row" id="respuesta"></div>
+        <div id="respuesta">
+            <p>uno</p>
+        </div>
     </main>
 
     <!-- footer -->
-    <footer class="contentf d-flex justify-content-center">
+    <footer>
         <p>
             Todos los derechos reservados &copy; <span id="year"></span>
         </p>

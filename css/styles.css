@@ -25,35 +25,36 @@ h2 {
 .container {
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container form {
+.container .form {
     width: min(100% - 15px, 30rem);
     background-color: white;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 30px rgb(16 16 16 / 16%);
 }
 
-.container form .inputs-flex {
+.form .inputs-flex {
     display: flex;
     gap: 1rem;
 }
 
-input, button {
+.form-control, button {
     padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
 }
 
-input {
+.form-control {
     width: 100%;
     border: 2px solid rgba(20 20 22 / 10%);
-    border-radius: 6px;
 }
 
-input:focus {
-    border-color: #a0a09b;
+.form-control:focus {
+    border-color: rgba(8 8 10 / 17%);
 }
 
 button {
@@ -64,12 +65,10 @@ button {
     color: white;
     font-weight: 500;
     border: none;
-    border-radius: 5px;
 }
 
 button:hover {
     cursor: pointer;
-    transform: scale(1px);
 }
 
 footer {
