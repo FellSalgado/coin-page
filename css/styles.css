@@ -23,15 +23,12 @@ h2 {
 }
 
 .container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: min(100% - 15px, 30rem);
+    margin-inline: auto;
 }
 
-.container .form {
-    width: min(100% - 15px, 30rem);
+.form {
+    width: 100%;
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
@@ -72,11 +69,15 @@ button:hover {
 }
 
 footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100vw;
     text-align: center;
 }
 
 @media (max-width: 750px) {
-    .container form .inputs-flex {
+    .form .inputs-flex {
         flex-direction: column;
     }
 }
